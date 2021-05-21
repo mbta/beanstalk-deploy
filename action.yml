@@ -5,15 +5,15 @@ runs:
   using: 'node12'
   main: 'beanstalk-deploy.js'
 inputs:
-  aws-access-key:
+  aws-access-key-id:
     description: 'AWS Access Key'
     required: true
-  aws-secret-key:
+  aws-secret-access-key:
     description: 'AWS Secret Key'
     required: true
   aws-session-token:
     description: 'AWS Session Token when using temporary security credentials such as when assuming a role in AWS through STS'
-    required: false  
+    required: false
   region:
     description: 'AWS Region'
     required: true
@@ -43,5 +43,5 @@ inputs:
     required: false
 
 branding:
-  icon: 'arrow-up'  
+  icon: 'arrow-up'
   color: 'green'
